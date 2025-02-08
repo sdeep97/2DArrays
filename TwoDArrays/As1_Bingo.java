@@ -1,4 +1,5 @@
-package TwoDArrays;
+
+package src.TwoDArrays;
 
 
 public class As1_Bingo {
@@ -74,17 +75,17 @@ public class As1_Bingo {
 
     public static boolean checkRow(int[] row) {
         for (int i = 0; i < row.length; i++) {
-            if (row[i] != -1) {
+            if (row[i] > 0) {
                 return false;
             }
-       }
-       return true;
+        }
+        return true;
     }
 
     public static boolean checkColumn(int[][] grid, int colNumber   ) {
 
         for (int row = 0; row < 5; row++) {
-            if (grid[row][colNumber] != -1) {
+            if (grid[row][colNumber] > 0) {
                 return false;
             }
         }
